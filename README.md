@@ -1,5 +1,8 @@
 # Geometric-Modelling-and-Computer-Graphics
 A submission portal for course ME 408 - Geometric Modelling and Computer Graphics
+
+Course Page [ME408 - GMCG](https://homepages.iitdh.ac.in/~sraut/Sp20_GMCG/index.html)
+
 Lab 01
   
 Lab 02

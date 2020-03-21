@@ -1,0 +1,3 @@
+Make the necessary modifications to the file: 'display.txt'.
+Leave a space between each neighboring character.
+Execute the file display.cpp to obtain the necessary results.

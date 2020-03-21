@@ -1,0 +1,106 @@
+#include<iostream>
+#include<cmath>
+#include<stdlib.h>
+
+using namespace std;
+
+class vector
+{
+public:
+    int dim;
+    float val[3];
+    vector()
+    {
+        dim = 3;
+    }
+    vector(float arr[3])
+    {
+        dim =3;
+        int i = 0;
+        while(i<dim)
+        {
+            val[i] = arr[i];
+            i++;
+        }
+    }
+    void print()
+    {
+        cout<<"The vector is: "<<val[0]<<"i +"<<val[1]<<"j +"<<val[2]<<"k."<<endl;
+    }
+    vector cross(vector const &other)
+    {
+        vector ans;
+        ans.val[0] = other.val[2]*this->val[1] - other.val[1]*this->val[2];
+        ans.val[1] = other.val[0]*this->val[2] - other.val[2]*this->val[0];
+        ans.val[2] = other.val[1]*this->val[0] - other.val[0]*this->val[1];
+        ans.print();
+        return ans;
+    }
+    int dot(vector const &other)
+    {
+        int dot = 0;
+        for(int i = 0; i <= dim; i++)
+        {
+            dot += this->val[i] * other.val[i];
+        }
+        return dot;
+    }
+    float mag()
+    {
+        float sum = 0;
+        for(int i = 0; i <= dim; i++)
+        {
+            sum += val[i] * val[i];
+        }
+        float mod = sqrt(sum);
+        cout << mod << endl;
+        return mod;
+    }
+    vector operator +(vector const &other)
+    {
+        float answer[3];
+        for(int i = 0; i <= dim; i++)
+        {
+            answer[i] = this->val[i] + other.val[i];
+        }
+        vector ans(answer);
+        ans.print();
+        return ans;
+    }
+    vector operator -(vector const &other)
+    {
+        float answer[3];
+        for(int i = 0; i <= dim; i++)
+        {
+            val[i] = this->val[i] - other.val[i];
+        }
+        vector ans(answer);
+        ans.print();
+        return ans;
+    }
+    ~vector()
+    {
+        cout<<"The vector has been deleted."<<endl;
+    }
+};
+int main(int argc, char** argv)
+{
+    float u_vec[3] = {atof(argv[1]), atof(argv[2]), atof(argv[3])};
+    float v_vec[3] = {atof(argv[4]), atof(argv[5]), atof(argv[6])};
+    int command = atof(argv[7]);
+    vector u(u_vec),v(v_vec);
+    switch(command)
+    {
+        case 1:
+            cout<<u+v;
+        case 2:
+            cout<<u-v;
+        case 3:
+            cout<<u.dot(v);
+        case 4:
+            cout<<u.cross(v);
+        case 5:
+            cout<<"Magnitude of vectors are u: "<<u.mag()<<" and v: "<<v.mag();
+    }
+    return 0;
+}

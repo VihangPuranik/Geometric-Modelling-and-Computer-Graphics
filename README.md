@@ -3,13 +3,13 @@ A submission portal for course ME 408 - Geometric Modelling and Computer Graphic
 
 Course Page [ME408 - GMCG](https://homepages.iitdh.ac.in/~sraut/Sp20_GMCG/index.html)
 
-Lab 01
-  
-Lab 02
+## Lab 01
+  Setup and C++ recap.
+## Lab 02
   Display 26x26 grid on terminal by reading data from a text file. 
-Lab 03
+## Lab 03
   Crating a static library for a class: Generate Bezier curve using De Casteljau algorithm.
-Lab 04
+## Lab 04
   Introduction to OpenGL.
-Lab 05
+## Lab 05
   Mouse Pointer location display.

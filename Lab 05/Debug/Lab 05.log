@@ -1,0 +1,8 @@
+﻿  Lab 05.cpp
+C:\Users\ASUS\source\repos\Lab 05\Lab 05.cpp(53,22): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+C:\Users\ASUS\source\repos\Lab 05\Lab 05.cpp(53,16): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+C:\Users\ASUS\source\repos\Lab 05\Lab 05.cpp(84,34): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\Lab 05\Lab 05.cpp(85,38): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\Lab 05\Lab 05.cpp(90,40): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\ASUS\source\repos\Lab 05\Lab 05.cpp(91,46): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+  Lab 05.vcxproj -> C:\Users\ASUS\source\repos\Lab 05\Debug\Lab 05.exe

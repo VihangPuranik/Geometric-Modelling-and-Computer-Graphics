@@ -13,3 +13,5 @@ Course Page [ME408 - GMCG](https://homepages.iitdh.ac.in/~sraut/Sp20_GMCG/index.
   Introduction to OpenGL.
 ## Lab 05
   Mouse Pointer location display.
+## Lab 06
+  Display the Bezier Curve through the control points mentioned in the code.
